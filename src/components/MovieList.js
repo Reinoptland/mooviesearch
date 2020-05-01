@@ -18,5 +18,17 @@ export default function MovieList() {
   }, []);
 
   console.log("MOVIES", movies);
-  return <div>I am a list</div>;
+  return (
+    <div>
+      {movies.map((movie) => {
+        console.log(movie);
+        return (
+          <div>
+            <h4>{movie.Title}</h4>
+            <img src={movie.Poster} />
+          </div>
+        );
+      })}
+    </div>
+  );
 }
