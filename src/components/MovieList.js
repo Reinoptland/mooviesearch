@@ -20,7 +20,8 @@ export default function MovieList() {
   }
 
   useEffect(() => {
-    fetchMovies("indiana jones");
+    // no longer neccessary, we fetch movies dynamically
+    // fetchMovies("indiana jones");
   }, []);
 
   //   console.log("MOVIES", movies);
