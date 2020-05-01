@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 export default function MovieList() {
   const [movies, setMovies] = useState([]);
+  const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
     async function fetchMovies() {
@@ -21,6 +22,9 @@ export default function MovieList() {
   console.log("MOVIES", movies);
   return (
     <div>
+      <label>Search</label>
+      <input onChange={(event) => setSearchTerm(event.target.value)} />
+      <button>search</button>
       {movies.map((movie) => {
         console.log(movie);
         return (
