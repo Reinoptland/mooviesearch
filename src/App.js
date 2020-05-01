@@ -7,6 +7,7 @@ import {
   Route,
   NavLink,
 } from "react-router-dom";
+import MovieList from "./components/MovieList";
 
 function App() {
   return (
@@ -36,7 +37,7 @@ function App() {
         <header className="App-header">
           <Switch>
             <Route path="/movies">
-              <h1>WATCH MOVIES MAN!</h1>
+              <MovieList />
             </Route>
             <Route exact path="/">
               <h1>WELCOME TO MY APP, please stay a while</h1>
