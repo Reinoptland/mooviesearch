@@ -41,3 +41,7 @@ Details
 3. Make a component (MovieList, MovieDetails)
 4. Fetch our data
 5. Display data
+
+# Search
+
+# Loading indicator
