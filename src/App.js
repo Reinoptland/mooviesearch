@@ -36,6 +36,7 @@ function App() {
         </nav>
         <header className="App-header">
           <Switch>
+            <Route path="/movies/:imdbID">TESTING!</Route>
             <Route exact path="/movies">
               <MovieList />
             </Route>
