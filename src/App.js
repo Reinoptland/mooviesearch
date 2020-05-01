@@ -36,7 +36,7 @@ function App() {
         </nav>
         <header className="App-header">
           <Switch>
-            <Route path="/movies">
+            <Route exact path="/movies">
               <MovieList />
             </Route>
             <Route exact path="/">
